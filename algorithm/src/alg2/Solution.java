@@ -34,18 +34,18 @@ public class Solution {
             if(l2!=null) l2 = l2.next;
         }
         if (carry > 0){//最后，进位处理
-            sum += carry * 10;
+            p.next = new ListNode(carry);
         }
         return  listNode.next;//
     }
 
     public static void main(String[] args) {
-        ListNode l1 = new ListNode(2);
-        l1.next = new ListNode(3);
-        l1.next.next = new ListNode(4);
+        ListNode l1 = new ListNode(5);
+//        l1.next = new ListNode(3);
+//        l1.next.next = new ListNode(4);
         ListNode l2 = new ListNode(5);
-        l2.next = new ListNode(6);
-        l2.next.next = new ListNode(4);
+//        l2.next = new ListNode(6);
+//        l2.next.next = new ListNode(4);
         ListNode listNode = new Solution().addTwoNumbers(l1, l2);
         while (listNode!=null){
             System.out.println(listNode.val);
