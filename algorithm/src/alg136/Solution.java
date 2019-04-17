@@ -27,6 +27,20 @@ public class Solution {
         return 0;
     }
 
+    /***
+     * 最优解 异或运算
+     *  值相同的数异或运算为0
+     *  0和任何数异或运算都为本身
+     * @param nums
+     * @return
+     */
+    public int singleNumber1(int[] nums){
+        int res = 0;
+        for (int i = 0; i < nums.length; i++) {
+            res ^= nums[i];
+        }
+        return res;
+    }
     public static void main(String[] args) {
         System.out.println(new Solution().singleNumber(new int[]{17,12,5,-6,12,4,17,-5,2,-3,2,4,5,16,-3,-4,15,15,-4,-5,-6}));
     }
