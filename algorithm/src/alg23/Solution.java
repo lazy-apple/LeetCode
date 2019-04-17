@@ -1,7 +1,5 @@
 package alg23;
 
-import java.util.List;
-
 /**
  * 合并 k 个排序链表，返回合并后的排序链表。请分析和描述算法的复杂度。
 
