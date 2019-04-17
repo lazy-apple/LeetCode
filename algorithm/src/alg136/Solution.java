@@ -1,9 +1,9 @@
-package alg;
+package alg136;
 
 import java.util.Arrays;
 
 /**
- * 只出现一次的数组
+ * 只出现一次的数字
  * @author LaZY(李志一)
  * @create 2019-04-17 11:31
  */
