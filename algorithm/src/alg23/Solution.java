@@ -60,7 +60,7 @@ public class Solution {
 }
 
 
-//class Solution {
+//class MinStack {
 ////
 ////    public ListNode merge2Lists(ListNode l1,ListNode l2){
 ////        if(l1 == null) return l2;
