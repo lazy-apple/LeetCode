@@ -3,7 +3,9 @@ package alg78;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
+/**主要是在搜索尝试过程中寻找问题的解，
+ * 当发现已不满足求解条件时，
+ * 就“回溯”返回，尝试别的路径。
  * @author LaZY(李志一)
  * @create 2019-05-22 13:44
  */
@@ -23,7 +25,6 @@ public class Solution {
 
     }
     public List<List<Integer>> subsets(int[] nums) {
-
         this.nums=nums;
         this.result=new ArrayList<List<Integer>>();
         int i=0;
@@ -31,7 +32,6 @@ public class Solution {
         result.add(tmp);
         find(i,tmp);
         return result;
-
 
     }
 
